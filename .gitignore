@@ -1,0 +1,64 @@
+# Eclipse and IntelliJ IDEA specific files
+*.classpath
+*.project
+*.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Maven
+target/
+!target/*.jar
+!target/*.war
+
+# Gradle
+.gradle/
+build/
+
+# Log files
+*.log
+
+# Application files
+application.properties
+application.yml
+
+# Environment files
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.swp
+*.swo
+
+# Dependencies and build artifacts
+*.jar
+*.war
+*.ear
+*.class
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# IDE-specific files
+.vscode/
+*.code-workspace
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Spring Boot DevTools (if you use DevTools)
+.spring-boot-devtools/
+
+# Miscellaneous
+*.diff
+*.patch
+*.sublime-project
+*.sublime-workspace

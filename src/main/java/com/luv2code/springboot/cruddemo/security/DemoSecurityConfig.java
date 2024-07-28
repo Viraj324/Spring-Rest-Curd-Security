@@ -40,7 +40,7 @@ public class DemoSecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http.authorizeHttpRequests(authz -> authz.requestMatchers(HttpMethod.GET, "/api/employees")
 				.hasAnyRole("EMPLOYEE", "MANAGER", "ADMIN").requestMatchers(HttpMethod.GET, "/api/employees/{id}")
-				.hasAnyRole("EMPLOYEE", "MANAGER", "ADMIN").requestMatchers(HttpMethod.PUT, "/api/employees")
+				.hasAnyRole("EMPLOYEE", "MANAGER", "ADMIN").requestMatchers(HttpMethod.PUT, "/api/employees/**")
 				.hasAnyRole("MANAGER", "ADMIN").requestMatchers(HttpMethod.POST, "/api/employees")
 				.hasAnyRole("MANAGER", "ADMIN").requestMatchers(HttpMethod.DELETE, "/api/employees/**")
 				.hasRole("ADMIN"));
